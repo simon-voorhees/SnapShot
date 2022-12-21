@@ -17,11 +17,13 @@ const Form = ({ handleSubmit, history }) => {
         placeholder="Search..."
         onChange={updateSearchInput}
         value={searchEntry}
+        aria-label="Search..."
       />
       <button
         type="submit"
         className={`search-button ${searchEntry.trim() ? "active" : null}`}
         disabled={!searchEntry.trim()}
+        aria-label="submit"
       >
         <svg height="32" width="32">
           <path
