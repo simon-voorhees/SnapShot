@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { PhotoContext } from "../context/PhotoContext";
 import Gallery from "./Gallery";
 import Loader from "./Loader";
+import gsap from "gsap";
+
 
 const Container = ({ searchTerm }) => {
   const { images, loading, runSearch } = useContext(PhotoContext);
